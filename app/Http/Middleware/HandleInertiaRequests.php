@@ -6,6 +6,7 @@ use App\Http\Resources\TopicResource;
 use App\Models\Topic;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
+use PragmaRX\Version\Package\Version;
 use Tightenco\Ziggy\Ziggy;
 
 class HandleInertiaRequests extends Middleware
@@ -42,6 +43,7 @@ class HandleInertiaRequests extends Middleware
                     'location' => $request->url(),
                 ]);
             },
+            'version' => (new Version())->format('compact')
         ]);
     }
 }

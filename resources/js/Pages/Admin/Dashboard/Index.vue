@@ -52,7 +52,7 @@ import { DocumentIcon } from '@heroicons/vue/24/outline';
                                <ApplicationLogo h="8" />
 
                                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                                    v3.0.63
+                                    {{ $page.props.version }}
                                 </p>
                             </div>
 
