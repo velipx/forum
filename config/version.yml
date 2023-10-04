@@ -1,4 +1,4 @@
-mode: git-local
+mode: git-remote
 blade-directive: version
 current:
   label: v
@@ -18,7 +18,7 @@ current:
     second: null
     timezone: null
 commit:
-  mode: git-local
+  mode: git-remote
   length: 6
   increment-by: 1
 git:
