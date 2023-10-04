@@ -64,7 +64,6 @@ import { DocumentIcon } from '@heroicons/vue/24/outline';
                                     Documentation
                                 </a>
 
-
                                 <a href="https://github.com/velipx/forum" target="_blank"
                                    class="relative inline-flex items-center justify-center font-semibold outline-none transition duration-75 hover:underline focus:underline gap-1.5 text-sm text-gray-700 dark:text-gray-200"
                                 >
