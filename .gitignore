@@ -1,0 +1,7 @@
+/artisan
+/.env
+/node_modules/
+/tests/
+/vendor/
+/data.ms/
+/data.ms/
