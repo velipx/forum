@@ -4,7 +4,7 @@ import '@github/markdown-toolbar-element'
 import 'floating-vue/dist/style.css'
 
 import { createApp, h } from 'vue';
-import { createInertiaApp } from '@inertiajs/vue3';
+import { createInertiaApp, Link, Head } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
@@ -17,9 +17,11 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue, Ziggy)
+            .component('Link', Link)
+            .component('Head', Head)
             .mount(el);
     },
     progress: {
-        color: '#4B5563',
+        color: '#a5b4fc',
     },
 });
